@@ -1,45 +1,55 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-	<head>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width,initial-scale=1" />
-		<title>Página de Login</title>
-	</head>
-	<body>
-		<header>
-			<a href="home.html">Home</a>
-			<a href="login.html">Login</a>
-			<a href="cadastro.html">Cadastre-se</a>
-		</header>
-		<main>
-			<h1>Login</h1>
-			<form>
-				<div>
-					<label for="email">Email:</label>
-					<input
-						id="email"
-						type="email"
-						name="email"
-						required
-						placeholder="seu@exemplo.com"
-					/>
-				</div>
-				<div>
-					<label for="password">Senha:</label>
-					<input
-						id="password"
-						type="password"
-						name="password"
-						required
-						placeholder="********"
-					/>
-				</div>
-				<div>
-					<button type="submit">Entrar</button>
-					<button type="button">Registrar</button>
-				</div>
-			</form>
-		</main>
-		<footer></footer>
-	</body>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Login</title>
+  <link rel="stylesheet" href="style(login).css" />
+</head>
+<body>
+  <header>
+    <a href="home.html">Home</a>
+    <a href="login.html">Login</a>
+    <a href="cadastro.html">Cadastre-se</a>
+  </header>
+
+  <main>
+    <h1>Login</h1>
+    <form action="home.html" method="GET">
+      <div>
+        <label for="usuario">Email ou Usuário:</label>
+        <input
+          type="text"
+          id="usuario"
+          name="usuario"
+          placeholder="Digite seu email ou usuário"
+          required
+        />
+      </div>
+
+      <div>
+        <label for="senha">Senha:</label>
+        <input
+          type="password"
+          id="senha"
+          name="senha"
+          placeholder="********"
+          required
+        />
+      </div>
+
+      <div class="remember-me">
+        <input type="checkbox" id="lembrar" name="lembrar" />
+        <label for="lembrar">Lembrar-me</label>
+      </div>
+
+      <div class="buttons">
+        <button type="submit">Entrar</button>
+        <button type="button" onclick="location.href='cadastro.html'">Registrar</button>
+      </div>
+    </form>
+  </main>
+
+  <footer></footer>
+</body>
 </html>
