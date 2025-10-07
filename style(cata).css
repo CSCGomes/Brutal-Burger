@@ -24,6 +24,13 @@ header{
     width: 120px;
     height: auto;
 }
+header a {
+  text-decoration: none;
+  color: #000;/
+  font-weight: bold;
+  margin-left: 20px;
+  transition: 0.3s;
+}
 header a:hover{
     color: #fff;
 }
