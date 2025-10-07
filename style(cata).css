@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    background-color: #000; 
+    color: #f5a623; 
+    line-height: 1.6;
+    font-family: "Outfit", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
+}
+header{
+    padding: 2rem;
+    background-color: #f5a623;
+    text-align: end;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+#cla{
+    width: 120px;
+    height: auto;
+}
+header a:hover{
+    color: #fff;
+}
