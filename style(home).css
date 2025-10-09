@@ -1,36 +1,55 @@
-@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
-body{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: Arial, sans-serif;
+}
+body {
+	background-color: black;
+	color: #ffa500;
+}
+header {
+	background-color: #111;
+	padding: 15px 20px;
+	display: flex;
+	gap: 20px;
+}
 
-    background-color: #000; 
-    color: #f5a623; 
-    line-height: 1.6;
-    font-family: "Outfit", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: <weight>;
-    font-style: normal;
-}
-header{
-    padding: 2rem;
-    background-color: #f5a623;
-    text-align: end;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-#logao{
-    width: 80px;
-    height: auto;
-}
 header a {
-  text-decoration: none;
-  color: #000;/
-  font-weight: bold;
-  margin-left: 20px;
-  transition: 0.3s;
+	color: #ffa500;
+	text-decoration: none;
+	font-weight: bold;
+	margin-top: 2em;
 }
+
 header a:hover {
-  color: #fff;
+	text-decoration: underline;
+}
+#bt-logao {
+	width: 80px;
+	height: auto;
+	border-radius: 5em;
+}
+#bt-brut {
+	width: 200px;
+	height: auto;
+	border-radius: 5em;
+}
+
+header a:hover {
+	color: #fff;
+}
+.container {
+	flex-direction: row-reverse;
+}
+main {
+	display: flex;
+	flex-direction: column;
+}
+h1 {
+	margin-bottom: 0.5em;
+}
+footer {
+	display: flex;
+	flex-direction: column;
 }
