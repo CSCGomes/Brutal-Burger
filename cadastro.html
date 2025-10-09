@@ -1,9 +1,10 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Document</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<title>Login</title>
+		<link rel="stylesheet" href="style(login).css" />
 	</head>
 	<body>
 		<header>
@@ -11,7 +12,64 @@
 			<a href="login.html">Login</a>
 			<a href="cadastro.html">Cadastre-se</a>
 		</header>
-		<main></main>
+
+		<main>
+			<h1>Cadastre-se</h1>
+			<form action="home.html" method="GET">
+				<div>
+					<label for="usuario">Usuário:</label>
+					<input
+						type="text"
+						id="usuario"
+						name="usuario"
+						placeholder="Digite seu usuário"
+						required
+					/>
+				</div>
+				<div>
+					<label for="usuario">Email:</label>
+					<input
+						type="text"
+						id="usuario"
+						name="Email"
+						placeholder="Digite seu Email"
+						required
+					/>
+				</div>
+
+				<div>
+					<label for="senha">Senha:</label>
+					<input
+						type="password"
+						id="senha"
+						name="senha"
+						placeholder="********"
+						required
+					/>
+				</div>
+				<div>
+					<label for="senha">Senha:</label>
+					<input
+						type="password"
+						id="senha"
+						name="Confirmar senha"
+						placeholder="********"
+						required
+					/>
+				</div>
+
+				<div class="remember-me">
+					<input type="checkbox" id="lembrar" name="lembrar" />
+					<label for="lembrar">Lembrar-me</label>
+				</div>
+
+				<div class="buttons">
+					<button type="submit">Registrar</button>
+				</div>
+			</form>
+			<p>Já tem uma conta? <a href="login.html">Entrar</a></p>
+		</main>
+
 		<footer></footer>
 	</body>
 </html>
