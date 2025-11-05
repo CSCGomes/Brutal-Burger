@@ -1,31 +1,51 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Document</title>
-	</head>
-	<body>
-		<header>
-			<a href="home.html">Home</a>
-			<a href="login.html">Login</a>
-			<a href="cadastro.html">Cadastre-se</a>
-		</header>
-		<main>
-			<div>
-				<h3>primata</h3>
-				<img
-					src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQqsSqnbkblANaQEuWvfKvKMrVQ538MrF3wGg&s"
-					alt="img-primal"
-				/>
-				<p>
-					Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod sunt
-					recusandae praesentium quam fugit, molestiae reprehenderit, nostrum
-					obcaecati ipsam officia cupiditate itaque, pariatur omnis at deserunt
-					iure ad adipisci sed!
-				</p>
-			</div>
-		</main>
-		<footer></footer>
-	</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Carrinho - Brutal Burger</title>
+    <link rel="stylesheet" href="style(carrinho).css" />
+  </head>
+  <body>
+    <header>
+      <img src="assests/Logo.png" alt="LOGO" id="bt-logao" />
+      <a href="home.html" id="bt-head">Home</a>
+      <a href="catalogo.html" id="bt-head">Cardápio</a>
+      <a href="login.html" id="bt-head">Login</a>
+    </header>
+
+    <main class="container">
+      <h1>🛒 Seu Carrinho</h1>
+
+      <section class="cart">
+        <div class="cart-item">
+          <img src="assests/classico.png" alt="classico" />
+          <div class="item-info">
+            <h3>O classico</h3>
+            <p>Pão artesanal, carne 180g, queijo e molho especial. </p>
+            <span>R$ 22,90</span>
+          </div>
+          <div class="item-actions">
+            <input type="number" value="1" min="1">
+            <button class="remove">✖</button>
+          </div>
+        </div>
+
+        
+      </section>
+
+      <aside class="summary">
+        <h2>Resumo do Pedido</h2>
+        <p>Subtotal: <span>R$ 22,90</span></p>
+        <p>Entrega: <span>R$ 5,00</span></p>
+        <hr>
+        <h3>Total: <span>R$ 27,90</span></h3>
+        <button class="checkout">Finalizar Pedido</button>
+      </aside>
+    </main>
+
+    <footer>
+      <h2>Brutal Burger © 2025 — O sabor da resistência, direto da raiz do Rio.🔥</h2>
+    </footer>
+  </body>
 </html>
