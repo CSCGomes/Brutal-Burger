@@ -6,13 +6,26 @@
 		<title>Brutal-Burger</title>
 		<link rel="stylesheet" href="style(home).css" />
 	</head>
+
 	<body>
 		<header>
-			<img src="assests/Logo.png" alt="LOGO" id="bt-logao" />
-			<a href="home.html" id="bt-head">Home</a>
-			<a href="login.html" id="bt-head">Login</a>
-			<a href="cadastro.html" id="bt-head">Cadastre-se</a>
+			<nav class="navbar">
+				<div class="nav-left">
+					<a href="home.html">Home</a>
+					<a href="carrinho.html">Carrinho</a>
+				</div>
+
+				<div class="nav-logo">
+					<img src="assests/Logo.png" alt="Logao" id="bt-logo" />
+				</div>
+
+				<div class="nav-right">
+					<a href="cadastro.html">Cadastro</a>
+					<a href="login.html">Login</a>
+				</div>
+			</nav>
 		</header>
+
 		<main>
 			<div id="a1">
 				<h1>Quem somos nós!</h1>
@@ -25,27 +38,28 @@
 					mundo, Brutal Burger é o verdadeiro sabor do Rio, do jeito que o
 					carioca gosta — forte, autêntico e BRUTAL. 🔥
 				</p>
-				<a href="catalogo.html" class="button" id="bt-card"
-					>Veja nosso Cardapio!</a
-				>
+				<a href="catalogo.html" class="button" id="bt-card">
+					Veja nosso Cardápio!
+				</a>
 			</div>
-			<img src="assests/brutal.jpg" alt="brut" id="bt-brut" />
+
+			<img src="assests/brutal.jpg" alt="Brutal-Burger" id="bt-brut" />
+
 			<h1>Unidades em seu Estado</h1>
 			<img src="" alt="MAPA-UNI" />
 		</main>
+
 		<footer>
 			<h2>Dê seu Feedback!!</h2>
 			<form action="">
 				<label for="n">Nome:</label><br />
 				<input
 					type="text"
-					,
 					name="Nome"
-					,
 					id="n"
-					,
 					placeholder="Insira seu nome..."
 				/>
+
 				<div class="form-group">
 					<label for="my-textarea">Feedback:</label><br />
 					<textarea
@@ -56,12 +70,12 @@
 						placeholder="Insira seu Feedback..."
 					></textarea>
 				</div>
+
 				<button type="submit">Enviar</button>
 			</form>
-			<a
-				href=
-				>Trabalhe conosco</a
-			>
+
+			<a href="#">Trabalhe conosco</a>
+
 			<h2>Brutal Burger: o sabor da resistência, direto da raiz do Rio. 🔥</h2>
 		</footer>
 	</body>
