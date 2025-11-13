@@ -1,158 +1,158 @@
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: Arial, sans-serif;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: Arial, sans-serif;
 }
 
 body {
-  background-color: black;
-  color: #ffa500;
+	background-color: black;
+	color: #ffa500;
 }
 
 header {
-  background-color: #111;
-  padding: 15px 20px;
+	background: linear-gradient(90deg, #ff7300, #ff4d00);
+	padding: 15px 20px;
 }
 
 .navbar {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  max-width: 1000px;
-  margin: 0 auto;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	max-width: 1000px;
+	margin: 0 auto;
 }
 
 .nav-left a,
 .nav-right a {
-  color: #ffa500;
-  text-decoration: none;
-  font-weight: bold;
-  margin: 0 10px;
-  transition: color 0.3s ease;
+	color: #fff;
+	text-decoration: none;
+	font-weight: bold;
+	margin: 0 10px;
+	transition: color 0.3s ease;
 }
 
 .nav-left a:hover,
 .nav-right a:hover {
-  color: #fff;
-  text-decoration: underline;
+	color: #fff;
+	text-decoration: underline;
 }
 
 .nav-logo img {
-  width: 80px;
-  height: auto;
-  border-radius: 50%;
-  display: block;
-  margin: 0 auto;
+	width: 80px;
+	height: auto;
+	border-radius: 50%;
+	display: block;
+	margin: 0 auto;
 }
 
 .feedback-container {
-  max-width: 600px;
-  background-color: #111;
-  margin: 60px auto;
-  padding: 40px;
-  border-radius: 12px;
-  box-shadow: 0 0 20px rgba(255, 165, 0, 0.3);
+	max-width: 600px;
+	background-color: #111;
+	margin: 60px auto;
+	padding: 40px;
+	border-radius: 12px;
+	box-shadow: 0 0 20px rgba(255, 165, 0, 0.3);
 }
 
 .logo {
-  text-align: center;
-  margin-bottom: 25px;
+	text-align: center;
+	margin-bottom: 25px;
 }
 
 .logo-img {
-  width: 100px;
-  height: 100px;
-  object-fit: contain;
-  margin-bottom: 10px;
-  border-radius: 50%;
+	width: 100px;
+	height: 100px;
+	object-fit: contain;
+	margin-bottom: 10px;
+	border-radius: 50%;
 }
 
 .logo h2 {
-  color: #ffa500;
-  font-weight: bold;
-  margin: 0;
+	color: #ffa500;
+	font-weight: bold;
+	margin: 0;
 }
 
 .form-label {
-  color: #ffa500;
-  font-weight: 600;
+	color: #ffa500;
+	font-weight: 600;
 }
 
 .form-control,
 textarea,
 input[type="text"],
 input[type="email"] {
-  background-color: #222;
-  border: 1px solid #ffa500;
-  color: #fff;
-  border-radius: 6px;
-  width: 100%;
-  padding: 10px;
+	background-color: #222;
+	border: 1px solid #ffa500;
+	color: #fff;
+	border-radius: 6px;
+	width: 100%;
+	padding: 10px;
 }
 
 .form-control:focus,
 textarea:focus,
 input:focus {
-  outline: none;
-  box-shadow: 0 0 5px #ffa500;
+	outline: none;
+	box-shadow: 0 0 5px #ffa500;
 }
 
 .btn-feedback,
 button[type="submit"] {
-  background-color: #ffa500;
-  border: none;
-  color: black;
-  font-weight: bold;
-  padding: 10px 20px;
-  border-radius: 8px;
-  cursor: pointer;
-  transition: all 0.3s ease;
+	background-color: #ffa500;
+	border: none;
+	color: black;
+	font-weight: bold;
+	padding: 10px 20px;
+	border-radius: 8px;
+	cursor: pointer;
+	transition: all 0.3s ease;
 }
 
 .btn-feedback:hover,
 button[type="submit"]:hover {
-  background-color: #ffb733;
-  transform: scale(1.05);
+	background-color: #ffb733;
+	transform: scale(1.05);
 }
 
 .alert-success {
-  background-color: #28a745;
-  border: none;
-  color: #fff;
-  font-weight: 500;
-  animation: fadeIn 0.5s ease-in-out;
+	background-color: #28a745;
+	border: none;
+	color: #fff;
+	font-weight: 500;
+	animation: fadeIn 0.5s ease-in-out;
 }
 
 footer {
-  text-align: center;
-  color: #ffa500;
-  margin-top: 30px;
-  font-size: 0.9rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+	text-align: center;
+	color: #ffa500;
+	margin-top: 30px;
+	font-size: 0.9rem;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 }
 
 footer a {
-  color: #ffa500;
-  text-decoration: none;
-  font-weight: bold;
-  margin-top: 10px;
-  transition: color 0.3s ease;
+	color: #ffa500;
+	text-decoration: none;
+	font-weight: bold;
+	margin-top: 10px;
+	transition: color 0.3s ease;
 }
 
 footer a:hover {
-  color: #fff;
+	color: #fff;
 }
 
 @keyframes fadeIn {
-  from {
-    opacity: 0;
-    transform: translateY(-10px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
+	from {
+		opacity: 0;
+		transform: translateY(-10px);
+	}
+	to {
+		opacity: 1;
+		transform: translateY(0);
+	}
 }

@@ -14,14 +14,14 @@ body {
 }
 
 header {
-	background-color: #111;
+	background: linear-gradient(90deg, #ff7300, #ff4d00);
 	padding: 15px 20px;
 	display: flex;
 	gap: 20px;
 }
 
 header a {
-	color: #ffa500;
+	color: #fff;
 	text-decoration: none;
 	font-weight: bold;
 }
@@ -41,7 +41,7 @@ main {
 
 main h1 {
 	margin-bottom: 20px;
-	color: #ffa500;
+	color: #ff7300;
 }
 
 form {
@@ -67,10 +67,10 @@ input[type="text"],
 input[type="password"] {
 	width: 100%;
 	padding: 12px;
-	border: 1px solid #ffa500;
+	border: 1px solid #000;
 	border-radius: 4px;
 	background-color: #000;
-	color: #ffa500;
+	color: #ff7300;
 	font-size: 16px;
 }
 
@@ -101,7 +101,7 @@ button[type="submit"],
 button[type="button"] {
 	flex: 1;
 	padding: 12px;
-	background-color: #ffa500;
+	background-color: #ff7300;
 	color: #000;
 	border: none;
 	border-radius: 4px;

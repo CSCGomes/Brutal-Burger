@@ -7,15 +7,24 @@
 
 body {
 	background-color: black;
-	color: #ffa500;
 }
-
 
 header {
-	background-color: #111;
+	background: linear-gradient(90deg, #ff7300, #ff4d00);
 	padding: 15px 20px;
 }
-
+h1 {
+	color: #ff7300;
+}
+p {
+	color: #fff;
+}
+h2 {
+	color: #ff7300;
+}
+h3 {
+	color: #fff;
+}
 
 .navbar {
 	display: flex;
@@ -25,10 +34,9 @@ header {
 	margin: 0 auto;
 }
 
-
 .nav-left a,
 .nav-right a {
-	color: #ffa500;
+	color: #fff;
 	text-decoration: none;
 	font-weight: bold;
 	margin: 0 10px;
@@ -40,7 +48,6 @@ header {
 	color: #fff;
 	text-decoration: underline;
 }
-
 
 .nav-logo img {
 	width: 80px;

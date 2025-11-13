@@ -9,13 +9,11 @@
 	<body>
 		<header>
 			<a href="home.html">Home</a>
-			<a href="login.html">Login</a>
-			<a href="cadastro.html">Cadastre-se</a>
 		</header>
 
 		<main>
 			<h1>Login</h1>
-			<form action="home.html" method="GET">
+			<form id="formLogin">
 				<div>
 					<label for="usuario">Email ou Usuário:</label>
 					<input
@@ -51,5 +49,32 @@
 		</main>
 
 		<footer></footer>
+
+		<script>
+			const formLogin = document.getElementById("formLogin");
+
+			formLogin.addEventListener("submit", (event) => {
+				event.preventDefault();
+
+				const usuario = document.getElementById("usuario").value.trim();
+				const senha = document.getElementById("senha").value.trim();
+				const userData = JSON.parse(localStorage.getItem("usuarioCadastrado"));
+
+				if (!userData) {
+					alert("⚠️ Nenhum usuário cadastrado! Faça o cadastro primeiro.");
+					return;
+				}
+
+				if (
+					(usuario === userData.usuario || usuario === userData.email) &&
+					senha === userData.senha
+				) {
+					alert("✅ Login realizado com sucesso!");
+					window.location.href = "home.html";
+				} else {
+					alert("❌ Usuário ou senha incorretos!");
+				}
+			});
+		</script>
 	</body>
 </html>
